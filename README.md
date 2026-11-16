@@ -4,13 +4,17 @@ Pinbench 是一套在浏览器里学习嵌入式硬件的 3D 入门课程。你�
 
 [在线体验](https://pinbench-3d-workshop.vercel.app) · [开始入门课](https://pinbench-3d-workshop.vercel.app/#learn) · [打开作品列表](https://pinbench-3d-workshop.vercel.app/#lab) · [下载单文件 HTML](https://raw.githubusercontent.com/think2do/pinbench-3d-workshop/main/index.html)
 
-[![Pinbench 首页展示六站新手路线与提示灯作品](docs/images/pinbench-home.webp)](https://pinbench-3d-workshop.vercel.app)
+[![在 Pinbench 首页点选微型扬声器，定位线指向小板机器人头部背面的扬声器](docs/images/pinbench-home.webp)](https://pinbench-3d-workshop.vercel.app)
+
+## 先认识小板机器人
+
+在首页打开「和小板玩」，可以听它用中文打招呼、看它走两步，或调整距离看它怎么回应。打开「认识零件」，点选卡片，机器人会转到对应视角，定位线会指出零件装在哪里。六张卡片从 ESP32-S3 主控讲起，依次介绍麦克风、测距模块、彩屏、舵机和扬声器。每个零件都可以听介绍，也可以直接打开 ESP32-S3 开发板详情。
 
 ## 从哪开始
 
 | 入口 | 你可以做什么 |
 | --- | --- |
-| **开始** | 按六站路线走，浏览器记住已学课程、已查看硬件和已完成作品。 |
+| **开始** | 先和小板机器人互动、认识六种零件，也可以按六站路线开始学习。 |
 | **学基础** | 学完四章八课，边读课文边看 3D 演示，或者到知识清单里查术语和硬件。 |
 | **认硬件** | 查看 15 块开发板和 58 个外设与配件，了解零件位置、引脚用途和组装过程。 |
 | **动手做** | 从 8 个引导作品中挑一个练习，或进入 4 个找错挑战和自由搭建。 |
