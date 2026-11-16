@@ -10,6 +10,7 @@
 <title>Pinbench · 零基础学嵌入式</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Pinbench 带你从零学嵌入式。认识开发板、零件和引脚，再接线动手做，看灯亮、电机转。创建人 Huang Xiyuan · 且曼学院。">
+<meta name="pinbench-audio-credit" content="Wyang · 普通话录音《你好吗》 · https://commons.wikimedia.org/wiki/File:Zh-cmn-%E4%BD%A0%E5%A5%BD%E5%97%8E.opus · 转码为 MP3 · https://creativecommons.org/licenses/by-sa/3.0/">
 </head>
 <body>
 <style>
@@ -816,8 +817,12 @@ button { cursor: pointer; }
 .first-tour-actions .link { margin-right: auto; }
 .first-tour-ring { position: fixed; z-index: 59; border: 2px solid var(--accent); border-radius: 8px; pointer-events: none; box-shadow: 0 0 0 2px rgba(20,23,26,.4); }
 
-.project-credit { margin-top: 18px; color: var(--muted); font-size: 12.5px; }
-.project-credit p { margin: 0 0 6px; max-width: 80ch; }
+.project-credit {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 8px 16px;
+  margin-top: 18px; color: var(--muted); font-size: 12.5px;
+}
+.project-credit p { margin: 0; }
+.project-credit .project-credit-links { flex: 0 0 auto; text-align: end; white-space: nowrap; }
 
 /* responsive */
 @media (max-width: 1100px) {
@@ -4379,10 +4384,8 @@ button { cursor: pointer; }
         <p class="roadmap-more"><a href="#learn/kb?level=3">想知道为什么？电路、信号、通信这些进阶内容都在知识清单里。</a></p>
       </section>
       <footer class="project-credit">
-        <p>语音素材 · 真人招呼来自 Wyang 的<a href="https://commons.wikimedia.org/wiki/File:Zh-cmn-%E4%BD%A0%E5%A5%BD%E5%97%8E.opus" target="_blank" rel="noopener">普通话录音《你好吗》</a>（转码为 MP3，<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>）。其余为 Pinbench 配音。</p>
         <p><strong>Pinbench · 零基础学嵌入式</strong> · 创建人：Huang Xiyuan · 且曼学院</p>
-        <p><a href="https://github.com/think2do/pinbench-3d-workshop" target="_blank" rel="noopener noreferrer">GitHub 开源项目</a> · <a href="https://github.com/think2do/pinbench-3d-workshop/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a></p>
-        <p>3D 模型按公开尺寸图与实物照片手工建模，用于学习演示。参考价格为常见渠道的大致区间。</p>
+        <p class="project-credit-links"><a href="https://github.com/think2do/pinbench-3d-workshop" target="_blank" rel="noopener noreferrer">GitHub 开源项目</a> · <a href="https://github.com/think2do/pinbench-3d-workshop/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a></p>
       </footer>
     </div>
   </section>
