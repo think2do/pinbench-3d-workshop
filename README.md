@@ -4,17 +4,21 @@ Pinbench 是一套在浏览器里学习嵌入式硬件的 3D 入门课程。你�
 
 [在线体验](https://pinbench-3d-workshop.vercel.app) · [开始入门课](https://pinbench-3d-workshop.vercel.app/#learn) · [打开作品列表](https://pinbench-3d-workshop.vercel.app/#lab) · [下载单文件 HTML](https://raw.githubusercontent.com/think2do/pinbench-3d-workshop/main/index.html)
 
-[![在 Pinbench 首页点选微型扬声器，定位线指向小板机器人头部背面的扬声器](docs/images/pinbench-home.webp)](https://pinbench-3d-workshop.vercel.app)
+[![曼波的零件图解，定位线指向腿根部的蓝色 SG90 舵机外壳](docs/images/pinbench-home.webp)](https://pinbench-3d-workshop.vercel.app)
 
-## 先认识小板机器人
+## 认识曼波
 
-在首页打开「和小板玩」，可以听它用中文打招呼、看它走两步，或调整距离看它怎么回应。打开「认识零件」，点选卡片，机器人会转到对应视角，定位线会指出零件装在哪里。六张卡片从 ESP32-S3 主控讲起，依次介绍麦克风、测距模块、彩屏、舵机和扬声器。每个零件都可以听介绍，也可以直接打开 ESP32-S3 开发板详情。
+在首页打开「和曼波玩」，可以打招呼、摆摆腿，或模拟距离，看曼波怎么回应。「再整一句」轮播四段趣味台词。网页麦克风只检测是否有声音。16 段普通话音频随 HTML 一起下载，离线也能播放。台词为原创，使用 [Kokoro 普通话模型](https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh) 在本地合成。
+
+打开「认识零件」，点选 ESP32-S3、麦克风、测距模块、彩屏、舵机或扬声器，机器人会转到对应视角，定位线落在镜头能看到的零件表面。每个蓝色舵机外壳固定在支架上，舵盘随输出轴带动一条腿。四只舵机使用独立稳压电源，与开发板共地。扬声器接 MAX98357A 功放的两个输出端。模型用于解释装配关系，实体尺寸、负载和供电容量需按实物验证。
+
+硬件参考 [TowerPro SG90](https://towerpro.com.tw/product/sg90-analog/)、[Petoi 四舵机四足方案](https://www.petoi.com/pages/quaddle-educational-robot-kit)、[Espressif 布局指南](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html)、[TDK INMP441](https://www.invensense.tdk.com/en-us/download-resource/ds-inmp441-00-inmp441-datasheet)、[HC-SR04P 应用说明](https://www.genirobot.co.kr/download/GENIBOT%20Technical%20Guide%20GB1-TRG0805P2.pdf)、[ST7789 彩屏](https://www.lcdwiki.com/1.3inch_IPS_Module)、[MAX98357A 功放](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/pinouts)。
 
 ## 从哪开始
 
 | 入口 | 你可以做什么 |
 | --- | --- |
-| **开始** | 先和小板机器人互动、认识六种零件，也可以按六站路线开始学习。 |
+| **开始** | 先和曼波互动、认识六种零件，也可以按六站路线开始学习。 |
 | **学基础** | 学完四章八课，边读课文边看 3D 演示，或者到知识清单里查术语和硬件。 |
 | **认硬件** | 查看 15 块开发板和 58 个外设与配件，了解零件位置、引脚用途和组装过程。 |
 | **动手做** | 从 8 个引导作品中挑一个练习，或进入 4 个找错挑战和自由搭建。 |
